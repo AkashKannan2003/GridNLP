@@ -18,6 +18,7 @@ class ChatScreenState extends State<ChatScreen> {
   final TextEditingController _textController = TextEditingController();
   ScrollController _scrollController = ScrollController();
   late bool isFilled = false;
+  final ScrollController _scrollController = ScrollController();
 
   @override
   void initState() {
@@ -104,7 +105,7 @@ class ChatScreenState extends State<ChatScreen> {
                         maxLines: null,
                         controller: _textController,
                         decoration: const InputDecoration(
-                          hintText: "Message",
+                          hintText: "Start typing...",
                           hintStyle: TextStyle(color: Colors.white54),
                           border: InputBorder.none,
                         ),

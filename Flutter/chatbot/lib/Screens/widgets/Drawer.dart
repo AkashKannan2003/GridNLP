@@ -11,7 +11,10 @@ class AppDrawer extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFF00203F), Color(0xFF005268)],
+            colors: [
+              Colors.black87,
+              Colors.black87
+            ], // You can adjust the colors here
           ),
         ),
         child: ListView(
@@ -26,19 +29,20 @@ class AppDrawer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Chatbot',
+                    'GridNLP',
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                    ),
+                        color: Colors.white,
+                        fontSize: 35,
+                        fontWeight: FontWeight.w500),
                   ),
                   SizedBox(
                     height: 8,
                   ),
                   Text(
-                    'Your AI Assistant',
+                    'GridNLP is an intelligent chatbot designed to assist users in the field of Substation Asset Maintenance.',
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 15,
                     ),
                   ),
                 ],
