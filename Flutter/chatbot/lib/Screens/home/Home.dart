@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class ChatScreen extends StatefulWidget {
-  const ChatScreen({Key? key}) : super(key: key);
+  const ChatScreen({super.key});
 
   @override
   ChatScreenState createState() => ChatScreenState();
@@ -18,7 +18,6 @@ class ChatScreenState extends State<ChatScreen> {
   final TextEditingController _textController = TextEditingController();
   ScrollController _scrollController = ScrollController();
   late bool isFilled = false;
-  final ScrollController _scrollController = ScrollController();
 
   @override
   void initState() {
